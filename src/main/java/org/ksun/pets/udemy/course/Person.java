@@ -3,7 +3,7 @@ package org.ksun.pets.udemy.course;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-@Component
+@Component("personBean")
 public class Person {
 private Pet pet;
 private String surname;
