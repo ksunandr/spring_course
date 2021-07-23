@@ -9,16 +9,16 @@ private Pet pet;
 private String surname;
 private int age;
 
-@Autowired
-    public Person(Pet pet) {
-        System.out.println("Person constructor");
-        this.pet = pet;
-
-    }
-
-//    public Person() {
+//@Autowired
+//    public Person(Pet pet) {
+//        System.out.println("Person constructor");
+//        this.pet = pet;
 //
 //    }
+
+    public Person() {
+        System.out.println("default Person constructor");
+    }
 
 
     public String getSurname() {
@@ -38,13 +38,15 @@ private int age;
     }
 
 
-
+@Autowired
     public void setPet(Pet pet) {
+
+        System.out.println("Person.setPet");
         this.pet = pet;
     }
 
     public void callPet() {
-        System.out.println("Person call pet");
+        System.out.println("Person.callPet");
         pet.say();
     }
 }
