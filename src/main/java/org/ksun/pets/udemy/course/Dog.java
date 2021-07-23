@@ -2,12 +2,12 @@ package org.ksun.pets.udemy.course;
 
 public class Dog implements Pet {
     public Dog() {
-        System.out.println("constructor");
+        System.out.println("Dog constructor");
     }
 
     @Override
     public void say() {
-        System.out.println("B");
+        System.out.println("Dog say Bow");
     }
 
 
