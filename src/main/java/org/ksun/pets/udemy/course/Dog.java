@@ -1,5 +1,8 @@
 package org.ksun.pets.udemy.course;
 
+import org.springframework.stereotype.Component;
+
+@Component("dog")
 public class Dog implements Pet {
     public Dog() {
         System.out.println("Dog constructor");
