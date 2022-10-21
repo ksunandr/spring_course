@@ -49,6 +49,7 @@ public class Person {
     }
 
     public void callPet() {
+      //pet =null; //- так можно сделать поэтому филд иньекции не рекомендуются
         System.out.println("Person.callPet");
         pet.say();
     }
